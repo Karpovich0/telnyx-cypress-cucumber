@@ -1,0 +1,41 @@
+{
+	"name": "telnyx-cypress-cucumber",
+	"version": "1.0.0",
+	"description": "AQA tests for Telnyx website",
+	"main": "index.js",
+	"scripts": {
+		"cy:open": "cypress open",
+		"cy:tests": "cypress run",
+		"cy:tests-with-allure": "npx cypress run --env allure=true --browser chrome",
+		"cy:generate-report": "npx allure generate allure-results --clean -o allure-report",
+		"cy:tests-with-allure-headless": "npx cypress run --headless --env allure=true --browser chrome",
+		"cy:generate-report-and-open": "npx allure generate allure-results --clean -o allure-report && allure open allure-report",
+		"cy:headless": "npx cypress run --headless --browser chrome",
+		"cy:headless-firefox": "npx cypress run --headless --browser firefox",
+		"cy:headless-edge": "npx cypress run --headless --browser edge"
+	},
+	"keywords": [
+		"cypress",
+		"aqa",
+		"cucumber",
+		"github"
+	],
+	"author": "Oleksandr Karpovych",
+	"license": "ISC",
+	"devDependencies": {
+		"@shelex/cypress-allure-plugin": "^2.40.0",
+		"cypress-multi-reporters": "^1.6.3"
+	},
+	"cypress-cucumber-preprocessor": {
+		"nonGlobalStepDefinitions": true,
+		"stepDefinitions": [
+			"./cypress/integration/step_definitions/*.js"
+		]
+	},
+	"dependencies": {
+		"@badeball/cypress-cucumber-preprocessor": "^18.0.6",
+		"@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+		"cypress": "^12.14.0",
+		"cypress-real-events": "^1.10.3"
+	}
+}

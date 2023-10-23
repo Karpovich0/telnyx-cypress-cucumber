@@ -1,0 +1,20 @@
+{
+	"homePageLink": "https://telnyx.com",
+	"mmsLink": "https://telnyx.com/products/mms-api",
+	"mmsTitleText": "MMS API",
+	"useCasesCardWidth": 0,
+	"customerLink": "https://telnyx.com/customer-stories/pointblank-political-campaign-sms",
+	"customerName": "Point Blank Political",
+	"productsVoiceApiLink": "https://telnyx.com/products/voice-api",
+	"productsVoiceApiTitle": "Voice API",
+	"globalCoverageLink": "https://telnyx.com/global-coverage",
+	"globalCoverageTitle": "Global coverage",
+	"signUpLink": "https://telnyx.com/sign-up",
+	"contactUsLink": "https://telnyx.com/contact-us",
+	"contactUsTitle": "Talk to an expert",
+	"signUpTitle": "Create a Telnyx account",
+	"solutionsPageLink": "https://telnyx.com/solutions",
+	"solutionsPageTitle": "Solutions for scaling your business",
+	"useCaseLink": "https://telnyx.com/use-cases/ai-and-machine-learning",
+	"useCaseTitle": "AI and Machine Learning"
+}
